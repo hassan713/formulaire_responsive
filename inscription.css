@@ -38,7 +38,7 @@ body{
 
 .inscription .input-group{
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	position: relative;
 	/* border: 1px solid red; */
 }
@@ -67,7 +67,7 @@ body{
 
 .inscription .input-group input:focus~label,
 .inscription .input-group input:valid~label {
-	top: -35px;
+	top: -30px;
 	font-size: 14px;
 	color:#39a0ca ;
 }
