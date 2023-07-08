@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins',sans-serif;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(250deg,rgba(0,0,0,0.7), #3551b5), url(movieTime.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+.inscription-box{
+	width: 100%;
+	margin-top: 15%;
+}
+
+.inscription{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid green; */
+}
+
+
+.inscription form{
+	width: 65%;
+	/* border: 1px solid fuchsia; */
+}
+
+.inscription .input-group{
+	width: 100%;
+	margin-bottom: 30px;
+	position: relative;
+	/* border: 1px solid red; */
+}
+
+.inscription .input-group input{
+	width: 100%;
+	padding: 10px;
+	outline: 0;
+	border: 1px solid #fff;
+	color: #fff;
+	background: transparent;
+	font-size: 15px;
+}
+
+.inscription .input-group label{
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	color: #fff;
+	cursor: text;
+	transition: 0.2s;
+}
+
+
+.inscription .input-group input:focus~label,
+.inscription .input-group input:valid~label {
+	top: -35px;
+	font-size: 14px;
+	color:#39a0ca ;
+}
+
+
+.inscription .input-group input:focus{ 
+	border-color:#39a0ca ;
+} 
+
+.inscription .input-group input:focus, 
+.inscription .input-group input:valid{
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+
+.inscription .row, .row1, .row2{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+}
+
+.inscription .input-group{
+	flex-basis: 48%;
+}
+
+
+.inscription button{
+	padding: 10px 0;
+	color: #fff;
+	outline: none;
+	background: transparent;
+	border: 1px solid #fff;
+	width: 100%;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+} 
+
+.inscription button:hover{
+	background-color: #39a0ca;
+}
+
+.inscription button:hover i{
+	color: green;
+}
+
+
+
+@media (max-width: 768px) {
+	.inscription form {
+		width: 90%;
+	  }
+	
+	  .inscription .row, .row1, .row2 {
+		flex-wrap: wrap;
+	  }
+
+	  .inscription .input-group{
+		flex-basis: 100%;
+	  }
+
+  }
